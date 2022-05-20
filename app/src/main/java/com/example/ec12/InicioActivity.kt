@@ -11,5 +11,6 @@ class InicioActivity : AppCompatActivity() {
 
         val data = getIntent().getStringExtra("NOMBRE")
         Log.i("Inicio",data.toString())
+
     }
 }
