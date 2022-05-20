@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Joaquin/Desktop/LP/EC12/app/src/main/res/layout/activity_inicio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Joaquin/Desktop/LP/EC12/app/src/main/res/layout/activity_log.xml" value="0.23125" />
         <entry key="..\:/Users/Joaquin/Desktop/LP/EC12/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Joaquin/Desktop/LP/EC12/app/src/main/res/layout/fragment_log.xml" value="0.21822916666666667" />
       </map>
     </option>
   </component>
