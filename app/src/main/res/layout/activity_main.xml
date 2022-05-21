@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/dMain">
+    android:id="@+id/dlMain">
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nviInicio"
+        android:id="@+id/nvInicio"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        app:headerLayout="@layout/header_navigation"
         app:menu="@menu/menu_navigation"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
