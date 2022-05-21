@@ -9,6 +9,7 @@
     android:id="@+id/dlMain">
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcvItems"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -21,6 +22,5 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         />
-
 
 </androidx.drawerlayout.widget.DrawerLayout>
