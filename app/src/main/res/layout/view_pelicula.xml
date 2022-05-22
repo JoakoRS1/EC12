@@ -22,7 +22,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/estrella_imagen"
-            tools:srcCompat="@drawable/estrella_imagen" />
+            tools:srcCompat="@drawable/estrella_imagen"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

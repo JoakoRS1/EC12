@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.iCartelera -> mostrarFragCartelera(ft)
                 R.id.iNosotros -> mostrarFragNosotros(ft)
             }
+            ft.addToBackStack(null)
 
             ft.commit()
 
@@ -50,8 +51,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         val ft = supportFragmentManager.beginTransaction()
-        mostrarFragCartelera(ft)
+        ft.add(R.id.fcvItems,fragCartelera)
         ft.commit()
+        mlMain.openDrawer(nvInicio)
         //Cargar fragment por defecto
 
 
@@ -63,5 +65,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun mostrarFragNosotros(ft: FragmentTransaction) {
         ft.replace(R.id.fcvItems, fragNosotros)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }
