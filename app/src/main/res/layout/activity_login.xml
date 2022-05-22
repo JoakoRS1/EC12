@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="16dp"
-    android:paddingBottom="16dp"
-    android:visibility="visible"
     tools:context=".LoginActivity">
 
     <Button
@@ -16,11 +13,15 @@
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"/>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,8 +31,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingrese su nombre: "
             android:padding="5sp"
+            android:text="Ingrese su nombre: "
             android:textSize="20sp"
 
             ></TextView>
@@ -41,29 +42,39 @@
             android:id="@+id/mEteID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
             android:gravity="bottom|center_vertical"
             android:hapticFeedbackEnabled="false"
             android:includeFontPadding="true"
             android:inputType="textPersonName"
+            android:padding="8sp"
             android:singleLine="true"
             android:soundEffectsEnabled="true"
-            android:textColorHighlight="#E47B7B"
-            android:background="@drawable/rounded"
-            android:padding="8sp"/>
+            android:textColorHighlight="#E47B7B" />
     </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:fontFamily="serif"
-        android:text="Cine Luna App"
-        android:textAlignment="center"
-        android:textSize="30sp"
+        android:background="#FF6464"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Cine Luna App"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
